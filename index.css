@@ -1,0 +1,155 @@
+/* #4287f5  */
+
+body {
+  color: #202020;
+  font-family: "Chakra Petch", sans-serif;
+  font-optical-sizing: auto;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px 40px;
+  max-width: 576px;
+  width: 100%;
+  border-left: thick double #eb6997;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  min-height: 90px;
+}
+
+img {
+  width: 21px;
+  height: 21px;
+  color: #202020;
+  margin-right: 5px;
+}
+
+a {
+  font-weight: bold;
+  color: #099156;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #099156;
+  color: rgb(244, 244, 244);
+}
+
+.downloadParagraph {
+  text-align: end;
+}
+
+.download {
+  font-weight: bold;
+  color: #eb6997;
+  text-decoration: none;
+}
+
+.download:hover {
+  background-color: #eb6997;
+  color: rgb(244, 244, 244);
+}
+
+.paragraphProjects {
+  margin-top: 5px;
+}
+
+.spanProjects {
+  color: #20202080;
+  margin-left: 10px;
+}
+
+span {
+  margin-right: 5px;
+}
+
+.liSocial {
+  display: flex;
+  align-items: center;
+}
+
+.languageFlag {
+  display: none;
+}
+
+.textSocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.downloadMobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .liLanguages {
+    font-size: 18px;
+  }
+
+  .languageFlag {
+    display: inline;
+  }
+
+  .downloadParagraph {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .ulSocial {
+    display: flex;
+    gap: 20px;
+  }
+
+  .liSocial {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: start;
+    font-size: 18px;
+  }
+
+  .download {
+    display: none;
+  }
+  .downloadMobile {
+    display: block;
+    text-decoration: underline;
+    color: #eb6997;
+    font-size: 1.6rem;
+  }
+}
